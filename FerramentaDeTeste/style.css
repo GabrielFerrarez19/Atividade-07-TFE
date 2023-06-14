@@ -240,7 +240,7 @@ body{
 .corpo2{
     display: none;
     height: 600px;
-    width:220px;
+    width:200px;
     z-index: 0;
     top:20px;
     justify-content:end;
