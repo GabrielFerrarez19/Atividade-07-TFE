@@ -211,6 +211,7 @@ body{
 }
 
 .linha{
+	width:auto;
     height: 2px;
 }
 
