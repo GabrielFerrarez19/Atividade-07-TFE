@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+            <meta charset="UTF-8"/>
+            <title>Ferramenta de teste</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <main class="mainlogobraca">
+                <img src="../Imagens/logosf.png" class="logo">
+                </nav>
+                </main>
+                <main class="mainbutton">
+                <div class="divbuttonlogin">
+                     <button class="login-button" >Login</button>
+                </div class="divbuttonlogin">
+                <div class="divbuttonlogin">
+                     <button class="inscrever-button">Inscrever-se</button>
+                </div>
+                <div class="divbuttonlogin">
+                    <button id="toggleButton" class="buttonBarraDeTarefas"> 
+                    <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="toggle">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                        </label>
+                    </button>
+                </div>
+                </main>
+        </header>
+        <main class="corpo">
+            <div class="DeixarOrganizado">
+            <div class="EntradaDeDados">
+                <div class="divEntradaDeDados">
+                <section class="sectionEntradaDeDados">
+                    <div class="divTituloInputEntradaDeDados">
+                        <p class="pTituloInputEntradaDeDados">
+                            <font class="fontTituloInputEntradaDeDados">Digite o nome do teste que sera feito:</font>
+                        </p>
+                    </div>
+                    <div class="divInputEntradaDeDados">
+                        <input placeholder="Qual o teste sera feito:" class="inputdados" name="text" type="text" id="idNomeTeste">
+                    </div>
+                </section>
+                </div>
+                <div class="divEntradaDeDados">
+                    <section class="sectionEntradaDeDados">
+                        <div class="divTituloInputEntradaDeDados">
+                            <p class="pTituloInputEntradaDeDados">
+                                <font class="fontTituloInputEntradaDeDados">Oque sera feito no teste:</font>
+                            </p>
+                        </div>
+                        <div class="divInputEntradaDeDados">
+                            <input placeholder="Oque será feito no teste:" class="inputdados" name="text" type="text" id="idOqueseraFeitoNoTeste">
+                        </div>
+                    </section>
+                    </div>
+                    <div class="divEntradaDeDados">
+                        <section class="sectionEntradaDeDados">
+                            <div class="divTituloInputEntradaDeDados">
+                                <p class="pTituloInputEntradaDeDados">
+                                    <font class="fontTituloInputEntradaDeDados">Resultado esperado:</font>
+                                </p>
+                            </div>
+                            <div class="divInputEntradaDeDados">
+                                <input placeholder="Resultado esperado" class="inputdados" name="text" type="text" id="idResultadoEsperado">
+                            </div>
+                        </section>
+                        </div>
+            </div>
+            <div class="DivbuttonAR">
+                <div class="Div2buttonAR">
+                <button class="shadow__btnA" id="buttonAprovado" onclick="Aprovado()">
+                    Aprovado
+                </button>
+                </div>
+                <div class="Div2buttonAR">
+                <button class="shadow__btnR" id="buttonAprovado" onclick="Reprovado()">
+                    Reprovado
+                </button>
+                </div>
+            </div>
+            <div class="Divbutton">
+                <button class="cta" onclick="EnviarTeste()">
+                    <span>Enviar Teste</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </button>
+            </div>
+            <div class="resultadosDosTestes">
+                <section class="sectionresultadosDosTestes">
+                    <div class="divTesteTitulo">
+                        <p class="pResultadoTestes">
+                            Testes:
+                        </p>
+                    </div>
+                    <div class="divcheckbox">
+                    <div class="divResultadoTestesEspaço">
+                    <label id="mostrarTestes" class="labelresultadosTestes"></label>
+                    </div>
+                    </div>
+                </section>
+            </div>
+            <div class="Divespaço">
+            </div>
+            </div>
+            <div class="corpo2" id="corpo2">
+                <div id="taskbar">
+                    <ul>
+                        <div class="DivHome">
+                            <a href="../index.html" class="HomeButton"><img src="../Imagens/home.png" class="home">
+                        </div>
+                        <div class="divlinks">
+                        <li><a href="../OqueETesteDeFrontEnd/OqueETesteDeFrontEnd.html"class="linkBarraDeTarefas">OQUE É TESTE DE FRONT-END.</a></li>
+                        </div>
+                        <div class="Divlinhas">
+                            <img src="../Imagens/linha.png" class="linha">
+                        </div>
+                        <div class="divlinks">
+                        <li><a class="linkBarraDeTarefas"></a></li>
+                        </div>
+                        <div class="Divlinhas">
+                            <img src="../Imagens/linha.png" class="linha">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer class="rodape">
+            <main  class="mainRodape">
+           <div class="divDesenvolvido">
+               <p class="prodape">Desenvolvido por Gabriel Cristiano Ferrarez</p>
+           </div>
+           <div class="divobjetivo">
+               <p class="pobjetivo">O objetivo do site e auxiliar testes de sites em desenvolvimento.</p>
+           </div>
+           </main>
+   </footer>
+   <script src="script.js"></script>
+    </body>
+</html>
